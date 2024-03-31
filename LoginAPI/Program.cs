@@ -15,6 +15,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddHttpContextAccessor();
+//this is to test the JSON web token authorization by sending the token in the header
 builder.Services.AddSwaggerGen(options =>
 {
     options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
@@ -37,6 +39,8 @@ builder.Services.AddScoped<IUserAPI, UserAPIRepository>();
 builder.Services.AddScoped<IStudentAPI, StudentAPIRepository>();
 builder.Services.AddScoped<ICategoryAPI, CategoryAPIRepository>();
 
+
+//this thing is necessary to read the JSON web token
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
     options.TokenValidationParameters = new TokenValidationParameters
     {

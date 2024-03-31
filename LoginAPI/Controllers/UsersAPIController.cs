@@ -1,6 +1,7 @@
 ﻿using LoginAPI.Data;
 using LoginAPI.Models;
 using LoginAPI.Repositories.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -26,6 +27,13 @@ namespace LoginAPI.Controllers
                 return BadRequest();
             }
             return Ok(dataOfUsers);
+        }
+
+        [HttpGet("GetName"),Authorize]
+        public async Task<ActionResult<string>> GetName()
+        {
+            var result=_userAPI.GetName();
+            return Ok(result);
         }
 
         [HttpGet("{id}")]

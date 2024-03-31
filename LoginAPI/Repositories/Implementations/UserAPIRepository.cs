@@ -12,10 +12,22 @@ namespace LoginAPI.Repositories.Implementations
     public class UserAPIRepository : IUserAPI
     {
         private readonly MyDBContext _context;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public UserAPIRepository(MyDBContext context)
+        public UserAPIRepository(MyDBContext context, IHttpContextAccessor httpContextAccessor)
         {
             _context = context;
+            _httpContextAccessor = httpContextAccessor;
+        }
+
+        public async Task<string> GetName()
+        {
+            string userName = null;
+            if (_httpContextAccessor != null)
+            {
+                userName=_httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.Name);
+            }
+            return userName;
         }
         public async Task<string> CreateUser(Users users)
         {

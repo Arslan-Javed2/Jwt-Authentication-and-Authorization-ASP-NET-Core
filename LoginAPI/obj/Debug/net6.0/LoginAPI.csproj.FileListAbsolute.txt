@@ -142,3 +142,4 @@ C:\Users\Admin\Downloads\LoginAPI\LoginAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\Admin\Downloads\LoginAPI\LoginAPI\bin\Debug\net6.0\Scrutor.dll
 C:\Users\Admin\Downloads\LoginAPI\LoginAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
 C:\Users\Admin\Downloads\LoginAPI\LoginAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\Admin\Downloads\LoginAPI\LoginAPI\obj\Debug\net6.0\LoginAPI.sourcelink.json
