@@ -38,6 +38,8 @@ builder.Services.AddDbContext<MyDBContext>(options =>
 builder.Services.AddScoped<IUserAPI, UserAPIRepository>();
 builder.Services.AddScoped<IStudentAPI, StudentAPIRepository>();
 builder.Services.AddScoped<ICategoryAPI, CategoryAPIRepository>();
+builder.Services.AddScoped<IEmail, IEmailRepository>();
+builder.Services.AddScoped<IPaymentDetailsAPI, PaymentDetailsAPIRepository>();
 
 
 //this thing is necessary to read the JSON web token

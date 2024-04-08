@@ -220,3 +220,11 @@ E:\LoginAPI\LoginAPI\obj\Debug\net6.0\refint\LoginAPI.dll
 E:\LoginAPI\LoginAPI\obj\Debug\net6.0\LoginAPI.pdb
 E:\LoginAPI\LoginAPI\obj\Debug\net6.0\LoginAPI.genruntimeconfig.cache
 E:\LoginAPI\LoginAPI\obj\Debug\net6.0\ref\LoginAPI.dll
+E:\LoginAPI\LoginAPI\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+E:\LoginAPI\LoginAPI\bin\Debug\net6.0\MailKit.dll
+E:\LoginAPI\LoginAPI\bin\Debug\net6.0\MimeKit.dll
+E:\LoginAPI\LoginAPI\bin\Debug\net6.0\System.Formats.Asn1.dll
+E:\LoginAPI\LoginAPI\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+E:\LoginAPI\LoginAPI\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+E:\LoginAPI\LoginAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+E:\LoginAPI\LoginAPI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
